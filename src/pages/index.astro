@@ -36,6 +36,8 @@ const phases = [
   { label: "Phase 2", title: "Production", text: "Développement des systèmes, de la carte et de l'expérience de progression." },
   { label: "Phase 3", title: "Polissage", text: "Optimisation, équilibre, bruitages, effets visuels et préparation de la sortie." },
 ];
+const servicesUrl = '/services';
+const joinUrl = 'https://auth-dev.destinyforge.xyz/realms/master/protocol/openid-connect/auth?client_id=4a2s-web&redirect_uri=https%3A%2F%2Fwww.4a2s.ch%2Fdestinyforge%2Fkeycloak&response_type=code&scope=openid&prompt=create';
 ---
 
 <html lang="fr">
@@ -572,6 +574,9 @@ const phases = [
   </head>
 
   <body>
+	<header>
+			
+		</header>
     <header class="topbar">
       <div class="container topbar-inner">
         <a href="#top" class="brand" aria-label="DestinyForge">
@@ -586,7 +591,7 @@ const phases = [
           <a href="#progres">Progression</a>
         </nav>
 
-        <a href="#contact" class="cta">Rejoindre le projet</a>
+        <a href={joinUrl} class="cta">Rejoindre le projet</a>
       </div>
     </header>
 
